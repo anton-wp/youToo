@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SvgCustom />
+    <DefLayout />
+    <Home />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DefLayout from "@/layout/default.vue"
+import Home from "@/views/home.vue"
+import SvgCustom from "@/components/svg.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DefLayout,
+    Home,
+    SvgCustom
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "@/assets/scss/global.scss";
+
 </style>

@@ -1,0 +1,22 @@
+@import "@/assets/scss/color.scss";
+@import "@/assets/scss/width.scss";
+
+.header-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: $white;
+  border-bottom: 1px solid $grey;
+  svg {
+    width: 120px;
+    height: 45px;
+  }
+  @media screen and (max-width: $small) {
+    height: 57px;
+    svg {
+      width: 63px;
+      height: 23px;
+    }
+  }
+}
